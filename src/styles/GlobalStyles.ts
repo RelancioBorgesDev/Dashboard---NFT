@@ -19,4 +19,11 @@ export default createGlobalStyle `
     border: 0;
     background: none;
   }
+
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
 `

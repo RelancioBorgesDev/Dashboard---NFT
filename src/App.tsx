@@ -1,10 +1,11 @@
+import Sidebar from "./components/Sidebar";
 import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <div>Hello</div>
+      <Sidebar/>
     </>
   );
 }
