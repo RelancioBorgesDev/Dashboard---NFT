@@ -13,6 +13,12 @@ export const NavigationList = styled.ul`
   padding: 5px;
   gap: 2rem;
 
+  @media (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 `
 export const NavigationItem = styled.li`
   width: 100%;
@@ -26,11 +32,26 @@ export const NavigationItem = styled.li`
      transition: all 0.2s ease;
      cursor: pointer;
    }
+
+   @media (max-width: 1200px) {
+     width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 export const NavigationItemTitle = styled.span`
   font-size: 1.4rem;
   color: #6b6e91;
+
+  @media (max-width: 1300px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `
 
 /* Icons Navigation */
