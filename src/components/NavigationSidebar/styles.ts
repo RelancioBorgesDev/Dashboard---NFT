@@ -42,12 +42,9 @@ export const NavigationItem = styled.li`
 `
 
 export const NavigationItemTitle = styled.span`
-  font-size: 1.4rem;
-  color: #6b6e91;
+  font-size: 1rem;
+  color: #fff;
 
-  @media (max-width: 1300px) {
-    font-size: 1.2rem;
-  }
 
   @media (max-width: 1200px) {
     display: none;

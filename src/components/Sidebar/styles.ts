@@ -13,10 +13,13 @@ export const Container = styled.div`
 export const LogoContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   border-bottom: 3px solid #6b6e91;
   padding: 5px;
+  margin-top: 2.5rem;
+  text-align: center;
 
 
   @media (max-width: 1300px) {

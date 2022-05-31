@@ -12,9 +12,11 @@ export const HeaderLayout = styled.header`
 `
 
 export const InputBox = styled.div`
+
   width: 40%;
   position: relative;
   > input{
+    max-width: 100%;
     width: 100%;
     position: relative;
     background-color: #2c2e4a;
@@ -43,7 +45,7 @@ export const BellIcon = styled(Bell)`
 `
 
 export const ProfileBox = styled.div`
-  width: 30%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-around;
