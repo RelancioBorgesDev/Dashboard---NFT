@@ -2,11 +2,10 @@ import styled from "styled-components";
 import {Dashboard, Home, ShoppingBag, Settings, Favorite, TrendingUp, Star, PurchaseTag} from '../../styles/Icons'
 /* Sidebar Container */
 export const Container = styled.div`
-  width: 15%;
+  width: fit-content;
   height: 100vh;
   position: fixed;
-  background-color: #1e213c;
-  box-shadow: 1px 0 5px 0px #000;
+  background-color: #1e203c;
   padding: 16px;
 `
 /* Logo */
@@ -18,7 +17,6 @@ export const LogoContainer = styled.div`
   justify-content: space-around;
   border-bottom: 3px solid #6b6e91;
   padding: 5px;
-  margin-top: 2.5rem;
   text-align: center;
 
 
@@ -43,7 +41,7 @@ export const TituloLogo = styled.h2`
     text-align: center;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 `

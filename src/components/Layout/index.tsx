@@ -11,6 +11,9 @@ import {
 
 import Player from "../Player/index";
 import NFT from "../NFT";
+import macaco from "../../assets/macaco.webp";
+import Ney from "../../assets/neymar.jpg";
+import Card from "../Card";
 
 export default function Layout() {
   return (
@@ -19,12 +22,24 @@ export default function Layout() {
         <Header />
         <Grid>
           <Principal>
-          <NFT/>
+            <NFT />
           </Principal>
           <Side>
             <Player />
           </Side>
-          <Cards>Cards</Cards>
+          <Cards>
+            <header>
+              <h1>Melhores NFT'S</h1>
+              <button>Ver mais</button>
+            </header>
+            <div>
+              <Card imagem_nft={macaco} dono={"Neymar"} imagem_dono={Ney} />
+              <Card imagem_nft={macaco} dono={"Neymar"} imagem_dono={Ney} />
+              <Card imagem_nft={macaco} dono={"Neymar"} imagem_dono={Ney} />
+              <Card imagem_nft={macaco} dono={"Neymar"} imagem_dono={Ney} />
+
+            </div>
+          </Cards>
         </Grid>
       </Wrapper>
     </LayoutContainer>

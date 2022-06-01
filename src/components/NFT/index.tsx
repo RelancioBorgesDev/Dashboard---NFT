@@ -1,18 +1,22 @@
-import { BoxNFT, BoxNFTInfo, HeartIcon, Container } from './style';
+import { BoxNFT, BoxNFTInfo, Container, Descricao, HeartIcon, Imagem, VerifiedIcon } from "./style";
 import macaco from "../../assets/macaco.webp";
 import Ney from "../../assets/neymar.jpg";
+import Card from "../Card";
 
 export default function NFT() {
   return (
     <Container>
-      <BoxNFT>
-        <img src={macaco} alt="NFT de macaco" />
-        <div>
-          <h2>Neymar JR</h2>
+     <BoxNFT>
+       <Imagem>
+        <img src={macaco} alt="NFT de macaco" width="200px" height="200px"/>
+       </Imagem>
+        <Descricao>
+          <h2>Neymar jr</h2>
           <span>
             <img src={Ney} alt="Neymar" />
+            <VerifiedIcon/>
           </span>
-        </div>
+        </Descricao>
       </BoxNFT>
       <BoxNFTInfo>
         <h1>Mutant Ape Yacht Club</h1>

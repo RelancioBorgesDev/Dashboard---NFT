@@ -25,8 +25,9 @@ export const NavigationItem = styled.li`
   border-radius: .75rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: .75rem;
+  gap: 1rem;
+  padding: .5rem;
+
    &:hover{
      background-color: #413060;
      transition: all 0.2s ease;
@@ -34,7 +35,7 @@ export const NavigationItem = styled.li`
    }
 
    @media (max-width: 1200px) {
-     width: auto;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,10 +44,11 @@ export const NavigationItem = styled.li`
 
 export const NavigationItemTitle = styled.span`
   font-size: 1rem;
+  font-weight: bold;
   color: #fff;
 
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 `

@@ -9,6 +9,11 @@ export const HeaderLayout = styled.header`
   justify-content: space-between;
   padding: 1.5rem 5rem;
 
+  @media (max-width: 975px){
+    height: fit-content;
+    flex-direction: column;
+  }
+
 `
 
 export const InputBox = styled.div`
@@ -25,6 +30,10 @@ export const InputBox = styled.div`
     font-size: 1.2rem;
     color: #fff;
     outline: 0;
+  }
+
+  @media (max-width: 975px){
+    width: 100%;
   }
 
 `
@@ -45,7 +54,7 @@ export const BellIcon = styled(Bell)`
 `
 
 export const ProfileBox = styled.div`
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -56,6 +65,12 @@ export const ProfileBox = styled.div`
     font-size: 1.2rem;
     font-weight: lighter;
     color: #fff;
+  }
+  @media (max-width: 975px){
+    width: 100%;
+  }
+  @media (max-width: 765px){
+    display: none;
   }
 `
 

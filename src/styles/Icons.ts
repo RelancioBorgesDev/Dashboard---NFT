@@ -9,5 +9,5 @@ export {Settings} from '@styled-icons/evaicons-solid/Settings'
 export {Bell} from '@styled-icons/bootstrap/Bell'
 export {Search} from '@styled-icons/boxicons-regular/Search'
 export {ArrowDropDown} from '@styled-icons/material/ArrowDropDown'
-
 export {Heart} from '@styled-icons/bootstrap/Heart'
+export {Verified} from '@styled-icons/material/Verified'

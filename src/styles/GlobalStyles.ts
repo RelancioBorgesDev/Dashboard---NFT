@@ -7,11 +7,13 @@ export default createGlobalStyle `
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
   }
-
+  body{
+    height: 100%;
+    background-color:  #1e203c;
+  }
   html, body, #root{
     max-height: 100vh;
     max-width: 100vw;
-
     width: 100%;
     height: 100%;
   }

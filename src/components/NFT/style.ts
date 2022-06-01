@@ -1,58 +1,21 @@
 import styled from "styled-components"
-import {Heart} from '../../styles/Icons'
+import {Heart, Verified} from '../../styles/Icons'
+
 
 
 export const Container = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+
+  @media (max-width: 765px){
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
-export const BoxNFT = styled.div`
-width: auto;
-height: auto;
-display: flex;
-flex-direction: column;
-border-radius: .75rem;
-
-> img {
-  width: 400px;
-  height: 300px;
-  border-top-right-radius: 1em;
-  border-top-left-radius: 1em;
-
-
-  border-bottom: 1px solid white;
-}
-> div{
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #fff;
-  border-bottom-right-radius: 1em;
-  border-bottom-left-radius: 1em;
-  padding: 1rem;
-}
-> div span img {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  top: -3rem;
-  right: 10px;
-}
-transition: all 0.2s ease;
-&:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-
-}
-
-`
 
 export const BoxNFTInfo = styled.div`
-  width: auto;
-  height: 300px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,4 +61,65 @@ export const HeartIcon = styled(Heart)`
   width:20px;
   height:20px;
   color: #6b6e91;
+`
+
+
+export const BoxNFT = styled.div`
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-areas:
+  "imagem"
+  "descricao"
+  ;
+
+
+
+`
+
+export const Imagem = styled.div`
+  grid-area: imagem;
+  grid-row: 1;
+
+  > img {
+    width: 300px;
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+  }
+`
+
+export const Descricao = styled.div`
+  width: 100%;
+  position: relative;
+  grid-area: descricao;
+  grid-row: 2/3;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-bottom-right-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+
+  > span img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: -3rem;
+  right: 10px;
+  border: 4px solid #fff;
+
+  @media (max-width: 1300px){
+    width: 50px;
+    height: 50px;
+    top: -2rem;
+  }
+}
+
+`
+
+export const VerifiedIcon = styled(Verified)`
+  width:20px;
+  height:20px;
+  color: #469bf0;
+  position: absolute;
+  top: 0;
+  right: 0;
 `

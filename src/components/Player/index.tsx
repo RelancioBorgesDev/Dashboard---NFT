@@ -1,14 +1,17 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
-
+import Video from '../../assets/APOCALYPTIC APES NFT Teaser Video.mp4'
+import Poster from '../../assets/Poster.png'
 const Player = ({ className } : any) => (
-  <ReactPlayer
-    url="https://www.youtube.com/watch?v=V5PrLfCyko4"
+  <video
+    src={Video}
     className={className}
     width="100%"
     height="100%"
-    playing
+    poster={Poster}
+    autoPlay={true}
+    loop
     muted
   />
 );
@@ -24,7 +27,6 @@ const AbsolutelyPositionedPlayer = styled(Player)`
 const RelativePositionWrapper = styled.div`
   position: relative;
   padding-top: 56.25%;
-  border: 1px solid black;
   border-radius: .75rem;
 `;
 
