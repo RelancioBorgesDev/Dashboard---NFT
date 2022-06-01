@@ -5,11 +5,22 @@ export const LayoutContainer = styled.div`
   width: calc(100% - 15%);
   height: 100vh;
   margin-left: 15%;
+
+  @media (max-width: 475px){
+    margin-left: 0;
+    width: 100%;
+  }
+
 `
 
 export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 `
 
 export const Grid = styled.div`
@@ -60,9 +71,6 @@ export const Principal = styled.div`
   }
 `
 
-
-
-
 /* SideBox */
 export const Side = styled.div`
   grid-area: side;
@@ -70,6 +78,7 @@ export const Side = styled.div`
   border-radius: .75rem;
 `
 
+/* Cards */
 
 export const Cards = styled.div`
   border-radius: .75rem;
@@ -86,6 +95,7 @@ export const Cards = styled.div`
     align-items: center;
     justify-content: space-between;
 
+
     > h1{
       color: #a67cff;
       font-weight: bold;
@@ -99,6 +109,20 @@ export const Cards = styled.div`
       font-weight: bold;
       font-size: 1.2rem;
     }
+
+    @media (max-width: 600px){
+      flex-direction: column;
+      gap: 1rem;
+
+      > button{
+        width: 100%;
+      }
+
+      h1{
+        text-align: center;
+      }
+    }
+
   }
 
   > div {

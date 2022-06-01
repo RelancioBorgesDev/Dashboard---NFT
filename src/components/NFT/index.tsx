@@ -13,7 +13,7 @@ export default function NFT() {
         <Descricao>
           <h2>Neymar jr</h2>
           <span>
-            <img src={Ney} alt="Neymar" />
+            <img src={Ney} alt="Neymar" width="300px" height="200px"/>
             <VerifiedIcon/>
           </span>
         </Descricao>

@@ -8,20 +8,25 @@ export const HeaderLayout = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 5rem;
+  margin-top: 1rem;
 
   @media (max-width: 975px){
     height: fit-content;
     flex-direction: column;
   }
 
+  @media (max-width: 475px){
+    width: 100%;
+    padding: 0;
+
+  }
+
 `
 
 export const InputBox = styled.div`
-
   width: 40%;
   position: relative;
   > input{
-    max-width: 100%;
     width: 100%;
     position: relative;
     background-color: #2c2e4a;
@@ -33,6 +38,10 @@ export const InputBox = styled.div`
   }
 
   @media (max-width: 975px){
+    width: 100%;
+  }
+
+  @media (max-width: 475px){
     width: 100%;
   }
 

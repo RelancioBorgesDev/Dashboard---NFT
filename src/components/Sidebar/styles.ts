@@ -7,6 +7,12 @@ export const Container = styled.div`
   position: fixed;
   background-color: #1e203c;
   padding: 16px;
+
+  @media (max-width: 475px){
+    display: flex;
+    padding: 0;
+    z-index: 1;
+  }
 `
 /* Logo */
 export const LogoContainer = styled.div`
@@ -25,6 +31,10 @@ export const LogoContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  @media (max-width: 475px){
+    display: none;
   }
 
 `

@@ -37,7 +37,6 @@ export default function Layout() {
               <Card imagem_nft={macaco} dono={"Neymar"} imagem_dono={Ney} />
               <Card imagem_nft={macaco} dono={"Neymar"} imagem_dono={Ney} />
               <Card imagem_nft={macaco} dono={"Neymar"} imagem_dono={Ney} />
-
             </div>
           </Cards>
         </Grid>

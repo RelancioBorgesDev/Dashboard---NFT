@@ -71,9 +71,6 @@ export const BoxNFT = styled.div`
   "imagem"
   "descricao"
   ;
-
-
-
 `
 
 export const Imagem = styled.div`
@@ -81,7 +78,6 @@ export const Imagem = styled.div`
   grid-row: 1;
 
   > img {
-    width: 300px;
     border-top-right-radius: .75rem;
     border-top-left-radius: .75rem;
   }

@@ -4,6 +4,10 @@ import {Home, ShoppingBag, Settings, Favorite, TrendingUp, Star, PurchaseTag} fr
 /* Navigation */
 export const NavigationContainer = styled.div`
   margin: 2rem 0;
+
+  @media (max-width: 475px){
+   margin: 0;
+  }
 `
 export const NavigationList = styled.ul`
   display: flex;
@@ -18,6 +22,22 @@ export const NavigationList = styled.ul`
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width: 475px){
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    background-color: #1e203c;
+    border-top: 1px solid #fff;
+    z-index: 100;
+    gap: 0.8rem;
+  }
+
 
 `
 export const NavigationItem = styled.li`
@@ -58,34 +78,73 @@ export const HomeIcon = styled(Home)`
   color: #6b6e91;
   width: 30px;
   height: 30px;
+
+  @media (max-width: 475px){
+    width: 20px;
+    height: 20px;
+  }
 `
 export const MarketIcon = styled(ShoppingBag)`
   color: #6b6e91;
   width: 30px;
   height: 30px;
+  @media (max-width: 475px){
+    width: 20px;
+    height: 20px;
+    @media (max-width: 475px){
+    width: 20px;
+    height: 20px;
+  }
+  }
 `
 export const FavoriteIcon = styled(Favorite)`
   color: #6b6e91;
   width: 30px;
   height: 30px;
+  @media (max-width: 475px){
+    width: 20px;
+    height: 20px;
+  }
 `
 export const TrendingIcon = styled(TrendingUp)`
   color: #6b6e91;
   width: 30px;
   height: 30px;
+  @media (max-width: 475px){
+    width: 20px;
+    height: 20px;
+  }
+
+
 `
 export const FeaturedIcon = styled(Star)`
   color: #6b6e91;
   width: 30px;
   height: 30px;
+  @media (max-width: 475px){
+    width: 20px;
+    height: 20px;
+  }
 `
 export const PurchaseIcon = styled(PurchaseTag)`
   color: #6b6e91;
   width: 30px;
   height: 30px;
+
+  @media (max-width: 475px){
+    width: 20px;
+    height: 20px;
+  }
+
+
 `
 export const SettingsIcon = styled(Settings)`
   color: #6b6e91;
   width: 30px;
   height: 30px;
+
+  @media (max-width: 475px){
+    width: 20px;
+    height: 20px;
+  }
 `

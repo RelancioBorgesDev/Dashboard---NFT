@@ -14,7 +14,6 @@ export default function Sidebar() {
         <TituloLogo>Dashboard - NFT</TituloLogo>
       </LogoContainer>
       <Navigation/>
-
     </Container>
   );
 }
