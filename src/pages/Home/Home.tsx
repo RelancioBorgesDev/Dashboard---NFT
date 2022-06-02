@@ -14,8 +14,11 @@ import NFT from "../../components/NFT";
 import macaco from "../../assets/macaco.webp";
 import Ney from "../../assets/neymar.jpg";
 import Card from "../../components/Card";
+import Sidebar from "../../components/Sidebar";
 export default function Home() {
   return (
+    <>
+    <Sidebar/>
     <LayoutContainer>
       <Wrapper>
         <Header />
@@ -41,5 +44,6 @@ export default function Home() {
         </Grid>
       </Wrapper>
     </LayoutContainer>
+    </>
   );
 }

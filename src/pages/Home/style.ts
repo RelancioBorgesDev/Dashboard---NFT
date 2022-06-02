@@ -16,7 +16,6 @@ export const LayoutContainer = styled.div`
   }
 
 `
-
 export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
@@ -30,7 +29,6 @@ export const Wrapper = styled.div`
       padding: 16px;
     }
 `
-
 export const Grid = styled.div`
   width: 100%;
   padding: 1rem;
