@@ -8,11 +8,12 @@ export const HeaderLayout = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 5rem;
-  margin-top: 1rem;
+
 
   @media (max-width: 975px){
     height: fit-content;
     flex-direction: column;
+    margin-top: 1rem;
   }
 
   @media (max-width: 475px){

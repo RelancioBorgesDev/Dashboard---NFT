@@ -24,12 +24,13 @@ export const NavigationList = styled.ul`
   }
 
   @media (max-width: 475px){
+
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     height: 50px;
     bottom: 0;
     background-color: #1e203c;

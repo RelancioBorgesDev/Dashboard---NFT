@@ -6,6 +6,10 @@ export const LayoutContainer = styled.div`
   height: 100vh;
   margin-left: 15%;
 
+  @media (max-width: 1300px){
+    width: calc(100% - 10%);
+    margin-left: 10%;
+  }
   @media (max-width: 475px){
     margin-left: 0;
     width: 100%;
@@ -21,30 +25,36 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 600px){
+      padding: 16px;
+    }
 `
 
 export const Grid = styled.div`
   width: 100%;
   padding: 1rem;
   display: grid;
-  grid-template-rows: 45% calc(100% - 60%);
+  grid-template-rows: 50% calc(100% - 50%);
   grid-template-columns: 65% calc(100% - 65%);
   grid-template-areas:
     "principal side"
     "cards cards"
   ;
-  grid-gap: 1rem;
   height: calc(100%  - 100px);
+  grid-gap: 1rem;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     display: grid;
-    grid-template-rows: 50%;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
     grid-template-columns: 100%;
     grid-template-areas:
     "principal"
     "side"
     "cards"
     ;
+
   }
 
   @media (max-width: 1024px){
@@ -55,16 +65,14 @@ export const Grid = styled.div`
 /* Principal Box */
 export const Principal = styled.div`
   width: 100%;
-
+  height: fit-content;
   grid-area: principal;
   border-radius: .75rem;
-  padding: 16px;
-
   background-image: linear-gradient(to right bottom, #315668, #2d2e4b, #2d2e4b, #2d2e4b);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   @media (max-width: 768px){
     height: fit-content;
@@ -85,7 +93,6 @@ export const Cards = styled.div`
   height: fit-content;
   grid-area: cards;
   padding: 16px;
-
   display: flex;
   flex-direction: column;
   gap: 1rem;

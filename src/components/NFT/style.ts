@@ -5,7 +5,10 @@ import {Heart, Verified} from '../../styles/Icons'
 
 export const Container = styled.div`
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  gap: 5rem;
 
   @media (max-width: 765px){
     flex-direction: column;
@@ -13,9 +16,58 @@ export const Container = styled.div`
   }
 `
 
+export const BoxNFT = styled.div`
+  border-radius: .75rem;
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-areas:
+  "imagem"
+  "descricao"
+  ;
+`
+
+export const Imagem = styled.div`
+  grid-area: imagem;
+  grid-row: 1;
+  > img {
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+
+    @media (max-width: 600px){
+      width: 300px;
+    }
+  }
+`
+
+export const Descricao = styled.div`
+  width: 100%;
+  position: relative;
+  grid-area: descricao;
+  grid-row: 2/3;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-bottom-right-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+
+  > span img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: -3rem;
+  right: 10px;
+  border: 4px solid #fff;
+
+  @media (max-width: 1300px){
+    width: 50px;
+    height: 50px;
+    top: -2rem;
+  }
+}
+
+`
 
 export const BoxNFTInfo = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,53 +115,6 @@ export const HeartIcon = styled(Heart)`
   color: #6b6e91;
 `
 
-
-export const BoxNFT = styled.div`
-  display: grid;
-  grid-template-rows: 200px;
-  grid-template-areas:
-  "imagem"
-  "descricao"
-  ;
-`
-
-export const Imagem = styled.div`
-  grid-area: imagem;
-  grid-row: 1;
-
-  > img {
-    border-top-right-radius: .75rem;
-    border-top-left-radius: .75rem;
-  }
-`
-
-export const Descricao = styled.div`
-  width: 100%;
-  position: relative;
-  grid-area: descricao;
-  grid-row: 2/3;
-  padding: 16px;
-  background-color: #f5f5f5;
-  border-bottom-right-radius: .75rem;
-  border-bottom-left-radius: .75rem;
-
-  > span img {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  top: -3rem;
-  right: 10px;
-  border: 4px solid #fff;
-
-  @media (max-width: 1300px){
-    width: 50px;
-    height: 50px;
-    top: -2rem;
-  }
-}
-
-`
 
 export const VerifiedIcon = styled(Verified)`
   width:20px;

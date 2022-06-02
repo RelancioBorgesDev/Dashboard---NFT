@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Header";
+import Header from "../../components/Header";
 import {
   Cards,
   Grid,
@@ -9,13 +9,12 @@ import {
   Wrapper,
 } from "./style";
 
-import Player from "../Player/index";
-import NFT from "../NFT";
+import Player from "../../components/Player";
+import NFT from "../../components/NFT";
 import macaco from "../../assets/macaco.webp";
 import Ney from "../../assets/neymar.jpg";
-import Card from "../Card";
-
-export default function Layout() {
+import Card from "../../components/Card";
+export default function Home() {
   return (
     <LayoutContainer>
       <Wrapper>
