@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {Home, ShoppingBag, Settings, Favorite, TrendingUp, Star, PurchaseTag} from '../../styles/Icons'
+import {Home, ShoppingBag, Settings, Favorite, TrendingUp, Star, PurchaseTag} from '../../../styles/Icons'
 
 /* Navigation */
 export const NavigationContainer = styled.div`
@@ -43,15 +43,16 @@ export const NavigationList = styled.ul`
 `
 export const NavigationItem = styled.li`
   width: 100%;
-  border-radius: .75rem;
+ /*  border-radius: .75rem; */
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: .5rem;
 
    &:hover{
-     background-color: #413060;
+     /* background-color: #413060; */
      transition: all 0.2s ease;
+     border-left: 5px solid #413060;
      cursor: pointer;
    }
 

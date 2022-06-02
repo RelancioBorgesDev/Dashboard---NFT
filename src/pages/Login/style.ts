@@ -39,9 +39,9 @@ export const LoginContainer = styled.div`
 export const Titulo = styled.h1`
   width: 100%;
   text-align: center;
-  color: #f5f5f5;
+  color: #faf7ff;
   font-weight: bold;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #faf7ff;
   padding: 1rem;
 `
 export const LoginGoogleBtn = styled.button`
@@ -74,6 +74,7 @@ export const InputContainer = styled.div`
     background-color: #17191a;
     color: #f5f5f5;
     padding: 1rem;
+    font-size: 1rem;
     outline: 0;
   }
 
@@ -107,6 +108,7 @@ export const LoginBtn = styled.button`
   font-weight: bold;
   padding: 1rem;
   background-color: #6720ff;
+  cursor: pointer;
 
 `
 
