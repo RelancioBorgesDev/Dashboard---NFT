@@ -41,9 +41,10 @@ export const HeaderMarket = styled.div`
     width: 100%;
   }
 
-    > option{
+  > option{
       cursor: pointer;
       padding: 1.5rem;
+      border: 1px solid black;
     }
   }
 `

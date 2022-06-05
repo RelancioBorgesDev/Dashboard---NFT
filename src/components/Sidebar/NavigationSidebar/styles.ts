@@ -46,6 +46,7 @@ export const NavigationItem = styled.li`
  /*  border-radius: .75rem; */
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   padding: .5rem;
 
@@ -55,7 +56,14 @@ export const NavigationItem = styled.li`
      border-left: 5px solid #413060;
      cursor: pointer;
    }
+   a{
+     display: flex;
+     align-items: center;
+     gap: 1rem;
 
+     width: 100%;
+     color: #fff;
+   }
    @media (max-width: 1200px) {
     width: auto;
     display: flex;

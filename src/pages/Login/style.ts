@@ -11,8 +11,8 @@ export const Container = styled.div`
   overflow: hidden;
   background-color: #1d1254;
 
-  @media (max-width:975px){
-    background-image: linear-gradient(to top, #17191a, #041c2a, #001d3c, #001b4b, #1d1254);
+  @media (max-width:1200px){
+    background-image: linear-gradient(to top, #17191a, #1d1254, #1d1254, #001d3c, #1d1254);
     display: flex;
     > div img {
       display: none;
@@ -90,11 +90,14 @@ export const CheckBoxContainer = styled.div`
 
   > div{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: .5rem;
   }
 
   > a {
     color: #563864;
+    font-weight: bold;
   }
 
 `
@@ -122,6 +125,8 @@ export const HaveAccount = styled.span`
   font-weight: 500;
   > a {
     color: #563864;
+    font-weight: bold;
+
   }
 `
 

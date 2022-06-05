@@ -31,7 +31,7 @@ export default function Login() {
         </CheckBoxContainer>
 
         <LoginBtn>Log In</LoginBtn>
-        <HaveAccount>Don't have an account?<a href="#">Sign UP</a></HaveAccount>
+          <HaveAccount>Don't have an account?<a href="#">Sign UP</a></HaveAccount>
       </LoginContainer>
     </Container>
   )
