@@ -24,7 +24,6 @@ export const NavigationList = styled.ul`
   }
 
   @media (max-width: 475px){
-
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -69,6 +68,13 @@ export const NavigationItem = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 475px){
+      &:hover{
+        border-left: none;
+        border-bottom: 5px solid #413060;
+      }
+  }
   }
 `
 

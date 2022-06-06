@@ -5,6 +5,7 @@ import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
 import GlobalStyles from "./styles/GlobalStyles";
 import Shop from "./pages/Market/Market";
+import Favorite from "./pages/Favorite/Favorite";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/market" element={<Shop />} />
+        <Route path="/favorite" element={<Favorite />} />
       </Routes>
     </Router>
   </React.StrictMode>
